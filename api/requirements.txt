@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+torch
+torchvision
+numpy
+pillow
+matplotlib
+scikit-image
+tqdm

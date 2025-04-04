@@ -1,0 +1,85 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 195 50% 5%;
+    --foreground: 185 70% 95%;
+
+    --card: 196 70% 7%;
+    --card-foreground: 185 70% 95%;
+
+    --popover: 196 60% 10%;
+    --popover-foreground: 185 70% 95%;
+
+    --primary: 187 100% 42%;
+    --primary-foreground: 187 10% 10%;
+
+    --secondary: 200 30% 20%;
+    --secondary-foreground: 187 70% 90%;
+
+    --muted: 200 30% 15%;
+    --muted-foreground: 180 5% 65%;
+
+    --accent: 187 70% 45%;
+    --accent-foreground: 187 10% 10%;
+
+    --destructive: 0 80% 50%;
+    --destructive-foreground: 180 100% 97%;
+
+    --border: 196 30% 20%;
+    --input: 196 30% 20%;
+    --ring: 187 100% 42%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image: radial-gradient(circle at 50% 50%, hsl(196, 70%, 7%), hsl(195, 70%, 3%));
+  }
+}
+
+@layer components {
+  .radar-button {
+    @apply bg-gradient-to-r from-radar-600 to-radar-700 hover:from-radar-500 hover:to-radar-600 
+    text-white font-medium py-3 px-6 rounded-md transition-all duration-300
+    shadow-[0_0_10px_rgba(0,188,212,0.5)] hover:shadow-[0_0_20px_rgba(0,188,212,0.7)]
+    flex items-center justify-center gap-2;
+  }
+  
+  .radar-card {
+    @apply bg-card border border-night-700 rounded-xl p-6 shadow-lg backdrop-blur-sm
+    animate-fade-in;
+  }
+  
+  .radar-title {
+    @apply text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r 
+    from-radar-300 to-radar-500 mb-4;
+  }
+  
+  .radar-subtitle {
+    @apply text-xl md:text-2xl font-semibold text-radar-400 mb-6; 
+  }
+  
+  .radar-section-title {
+    @apply text-2xl font-bold text-radar-400 mb-4;
+  }
+
+  .radar-grid-bg {
+    @apply bg-grid-pattern bg-center;
+  }
+
+  .upload-zone {
+    @apply border-2 border-dashed border-night-600 hover:border-radar-600
+    rounded-xl p-8 transition-colors duration-300 cursor-pointer bg-night-900/50;
+  }
+}

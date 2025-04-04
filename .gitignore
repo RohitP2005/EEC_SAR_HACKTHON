@@ -1,0 +1,84 @@
+# ===============================
+# Python
+# ===============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Pytest
+.pytest_cache/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# MyPy, Pylint
+.mypy_cache/
+.dmypy.json
+.pyre/
+*.pth
+
+
+# VSCode settings
+.vscode/
+
+# ===============================
+# FastAPI / Uvicorn
+# ===============================
+*.log
+instance/
+*.db
+*.sqlite3
+
+# If you store static files or uploads
+/static/
+/media/
+/uploads/
+
+# Dotenv
+.env
+.env.*  # Like .env.local, .env.development, etc
+
+# ===============================
+# Node / React
+# ===============================
+node_modules/
+build/
+dist/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.cache/
+.temp/
+*.tsbuildinfo
+
+# React-specific
+.env.local
+.env.development
+.env.test
+.env.production
+
+# MacOS / Linux / Windows system files
+.DS_Store
+Thumbs.db
