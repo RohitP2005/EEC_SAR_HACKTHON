@@ -147,7 +147,7 @@ const ImageUpload = () => {
                       </div>
                     </div>
                   ) : convertedImage ? (
-                    <div className="relative w-full h-full">
+                    <div className="h-64 md:h-80  overflow-hidden flex items-center justify-center ">
                       <img
                         src={convertedImage}
                         alt="Optical"

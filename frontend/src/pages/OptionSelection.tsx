@@ -34,7 +34,7 @@ const OptionSelection = () => {
             </p>
             <div className="flex justify-end">
               <button className="flex items-center text-radar-400 hover:text-radar-300 transition-colors group">
-                <span>Get started</span>
+                <span>Try Now</span>
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -56,7 +56,7 @@ const OptionSelection = () => {
             </p>
             <div className="flex justify-end">
               <button className="flex items-center text-radar-400 hover:text-radar-300 transition-colors group">
-                <span>Get started</span>
+                <span>Try Now</span>
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>

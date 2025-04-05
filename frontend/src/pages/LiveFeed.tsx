@@ -118,7 +118,7 @@ const LiveFeed: React.FC = () => {
 
   return (
     <Layout>
-      <div className="max-w-[1800px] mx-auto text-white px-4">
+      <div className="max-w-[1800px] w-[80vw] mx-auto text-white px-4">
         <div className="flex items-center mb-8">
           <button
             onClick={() => navigate('/options')}
@@ -161,7 +161,7 @@ const LiveFeed: React.FC = () => {
           {/* Images Section - Compact */}
           <div className="flex flex-col gap-4">
             {/* SAR Image Card */}
-            <div className="radar-card p-4 flex flex-col h-[240px]">
+            <div className="radar-card p-4 flex flex-col h-[35vh] w-[20vw]">
               <h2 className="text-xl font-semibold mb-2">🛰️ SAR Image</h2>
               <div className="flex-1 flex items-center justify-center overflow-hidden">
                 {loading ? (
@@ -172,7 +172,7 @@ const LiveFeed: React.FC = () => {
                   <img
                     src={sarImageUrl}
                     alt="SAR Output"
-                    className="max-h-[180px] max-w-full object-contain"
+                    className="max-h-full max-w-full object-contain"
                   />
                 ) : (
                   <div className="text-night-300">Select a location on the map</div>
@@ -193,14 +193,14 @@ const LiveFeed: React.FC = () => {
 
 
             {/* Optical Image Card */}
-            <div className="radar-card p-4 flex flex-col h-[240px]">
+            <div className="radar-card p-4 flex flex-col h-[35vh] w-[20vw]">
               <h2 className="text-xl font-semibold mb-2">🌄 Optical Image</h2>
               <div className="flex-1 flex items-center justify-center overflow-hidden">
                 {convertedImage ? (
                   <img
                     src={convertedImage}
                     alt="Optical Output"
-                    className="max-h-[180px] max-w-full object-contain"
+                    className="max-h-full max-w-full object-contain"
                   />
                 ) : isProcessing ? (
                   <div className="text-yellow-300">⏳ Converting image...</div>
